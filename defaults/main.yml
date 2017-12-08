@@ -1,0 +1,25 @@
+---
+ovirt_engine_setup_dwh: True
+ovirt_engine_setup_version: '4.1'
+
+ovirt_engine_setup_provider_ovn_username: 'admin@internal'
+
+ovirt_engine_setup_db_host: 'localhost'
+ovirt_engine_setup_db_port: 5432
+ovirt_engine_setup_db_name: 'engine'
+ovirt_engine_setup_db_user: 'engine'
+
+ovirt_engine_setup_dwh_db_configure: true
+# ^ set this to false if you want to install the dwh on a different host
+# machine rather than the same machine where the engine is installed.
+ovirt_engine_setup_dwh_db_host: 'localhost'
+ovirt_engine_setup_dwh_db_port: 5432
+ovirt_engine_setup_dwh_db_name: 'ovirt_engine_history'
+ovirt_engine_setup_dwh_db_user: 'ovirt_engine_history'
+
+ovirt_engine_setup_firewall_manager: 'firewalld'
+
+ovirt_engine_setup_update_packages: false
+
+ovirt_engine_setup_product_type: ovirt-engine
+ovirt_engine_setup_package_list: []
